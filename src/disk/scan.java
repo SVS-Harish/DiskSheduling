@@ -43,9 +43,11 @@ public class scan
 		 	    }
 
 		     }
-	    	 System.out.println(a[i]+" "+ 0);
+	    	 
 	    	 if(p+1<n+1)
 	    	 {
+	    		 
+	    		 System.out.println(a[i]+" "+ 0);
 	    	 System.out.println(0+" "+a[p+1]);
 		    if((a[p+1]-a[0])>0)
 		    {
@@ -73,8 +75,9 @@ public class scan
 		 	    }
 
 		     }
-	    	 }
 		    count=count+(2*(a[0]-st));
+	    	 }
+		    
 	//	    System.out.println(count);
 		    
 	return count;

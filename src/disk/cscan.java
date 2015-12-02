@@ -33,6 +33,7 @@ public class cscan {
 		        }
 		    }
 		    int count=0;
+		    //System.out.println(p +"is value of p ----"+n+"is value of n");
 		    for (i = p; i > 0; i--)
 		    {
 		    	 //System.out.println(a[i]-a[i-1]);
@@ -48,8 +49,12 @@ public class cscan {
 		 	    }
 
 		     }
+		    if((p)!=n)
+		    {
 	    	 System.out.println(a[0]+" "+st);
 	    	 System.out.println(ed+" "+a[n]);
+	    	 count=count+(a[0]-lb)+(ub-a[n]);
+		    }
 		    for (i = n; i > (p+1); i--)
 		    {
 		    	 if ((a[i]-a[i-1])<0)
@@ -64,7 +69,7 @@ public class cscan {
 		 	    }
 
 		     }
-		    count=count+(a[0]-lb)+(ub-a[n]);
+		   
 	//	    System.out.println(count);
 		    return count;
 

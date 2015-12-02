@@ -43,16 +43,18 @@ public class look
 
 		     }
 	    //	 System.out.println(a[p+1]-a[0]);
-
-		    if((a[p+1]-a[0])>0)
+		    if((p+1 < n+1))
+		    {
+		    if(((a[p+1]-a[0])>0) )
 		    {
 		    	c = c + (a[p+1]-a[0]);
 		    	System.out.println(a[0]+" "+a[p+1]);
 		    }
+		    
 		    else
 		    {
 		    	c= c-(a[p+1]-a[0]); 
-		    }
+		    }}
 		    for (i = (p+1); i < (n); i++)
 		    {
 		     //System.out.println(a[i]-a[i+1]);
